@@ -1,0 +1,6 @@
+# Requirements
+bs4
+aiohttp
+numpy
+nest_asyncio
+pandas
