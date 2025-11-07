@@ -75,3 +75,8 @@ A copy of the GNU General Public License is listed along with this program.
        Run the script `main.py` from the terminal or Anaconda prompt:  
        python main.py  
 4. The output catalogues will be saved automatically in `./earthquake_data/`
+
+-----
+The GeoNet website is a collaboration between NHC Toka Tū Ake and Earth Sciences New Zealand.  
+We used the Quake Search system to obtain a seismic catalog from New Zealand.  
+We acknowledge the New Zealand GeoNet programme and its sponsors NHC, GNS Science, LINZ, NEMA and MBIE for providing access to their datasets.
