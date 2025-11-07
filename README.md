@@ -1,20 +1,20 @@
 # NZQuakeParser
-# ==============================================================
-# Project: GeoNet Earthquake Data Parser (NZQuakeParser)
-# Author: L. Caravella, lcaravella@ogs.it
-# Year: 2025
-# Overview:
-# The GeoNet Quake Search (https://quakesearch.geonet.org.nz/) application 
-# does not list all the available magnitude information into a single file.
+==============================================================
+Project: GeoNet Earthquake Data Parser (NZQuakeParser)<br>
+Author: L. Caravella, lcaravella@ogs.it
+Year: 2025
+Overview:
+The GeoNet Quake Search (https://quakesearch.geonet.org.nz/) application 
+does not list all the available magnitude information into a single file.
 
-# This script automates the download of **all magnitude data** 
-# from individual event web pages on 
-# [GeoNet](https://www.geonet.org.nz/earthquake/technical/{eventID}).
+This script automates the download of **all magnitude data** 
+from individual event web pages on 
+[GeoNet](https://www.geonet.org.nz/earthquake/technical/{eventID}).
 
-# After reading the '.csv' files obtained from the GeoNet Quake Search site, 
-# it filters for earthquake data only, lists the event IDs, 
-# fetches the technical pages asynchronously, extracts key information, 
-# and saves the results in a catalogue `.csv` file.
+After reading the '.csv' files obtained from the GeoNet Quake Search site, 
+it filters for earthquake data only, lists the event IDs, 
+fetches the technical pages asynchronously, extracts key information, 
+and saves the results in a catalogue `.csv` file.
 
 
 # License:
