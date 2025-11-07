@@ -3,21 +3,21 @@ Project: GeoNet Earthquake Data Parser (NZQuakeParser)
 Author: L. Caravella, lcaravella@ogs.it  
 Year: 2025  
 ## Overview:  
-The GeoNet [Quake Search application](https://quakesearch.geonet.org.nz/) 
+The GeoNet [Quake Search application](https://quakesearch.geonet.org.nz/) (GNS Science, 2025)  
 does not list all the available magnitude information into a single file.  
 
 This script automates the download of **all magnitude data** 
 from individual event web pages on 
 [GeoNet](https://www.geonet.org.nz/earthquake/technical/{eventID}).
 
-After reading the '.csv' files obtained from the GeoNet Quake Search site, 
+After reading the `.csv` files obtained from the GeoNet Quake Search site, 
 it filters for earthquake data only,  
 lists the event IDs, fetches the technical pages asynchronously, extracts key information,  
 and saves the results in a catalogue `.csv` file.  
 
 
 ## License:
-This program is free software: you can redistribute it and/or modify it under the terms of the  
+This program is a free software: you can redistribute it and/or modify it under the terms of the  
 GNU General Public License as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
@@ -25,29 +25,28 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
 See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
-
+A copy of the GNU General Public License is listed along with this program.  
 ## Folder Structure
-project_root/  
-│  
-├── main.py # Main driver script (run this)  
-├── functions.py # Helper functions for parsing, saving, and ID extraction  
-│  
-├── query/ # Input GeoNet catalogue CSVs  
-│ └── *.csv  
-│  
-├── IDS/ # Generated half-year ID files (.dat)  
-│ └── *_ID.dat  
-│  
-├── earthquake_data/ # Output parsed earthquake catalogue  
-│ └── *_earthquake_data.csv  
-│  
-├── requirements.txt # list of required libraries  
-│  
-└── README.md # This file  
-
-
+<pre>project_root/  
+   │  
+   ├── main.py # Main driver script (run this)  
+   │  
+   ├── main.ipynb
+   │  
+   ├── functions.py # Helper functions for parsing, saving, and ID extraction  
+   │  
+   ├── query/ # Input GeoNet catalogue (.csv)  
+   │  └── *.csv  
+   │  
+   ├── IDS/ # Generated half-year ID files (.dat)  
+   │ └── *_ID.dat  
+   │  
+   ├── earthquake_data/ # Output parsed earthquake catalogue  
+   │ └── *_earthquake_data.csv  
+   │  
+   ├── requirements.txt # List of required libraries  
+   │  
+   └── README.md # This file </pre>
 
 ## How It Works
 
@@ -65,13 +64,17 @@ project_root/
 ## How to Run
 
 (Make sure all the required libraries and packages are installed.)
-1. Download the user-selected CSV catalogue catalogue from the GeoNet [Quake Search application](https://quakesearch.geonet.org.nz/)  
-2. Copy the downloaded CSV file(s) into folder './query'
+1. Download the user-selected CSV catalogue from the [GeoNet Quake Search application](https://quakesearch.geonet.org.nz/)  
+2. Copy the downloaded `.csv` file(s) into `./query`  
     (NOTE: all the files in query directory will be processed)
-3. Run the program
-    Option 1 — Jupyter Notebook
-    open main.ipynb and run all the cells 
-    Option 2 — standalone Python script
-    Run the script from the terminal or Anaconda prompt:
-    python main.py
-4. The output catalogues will be saved automatically in ./earthquake_data/
+3. Run the program  
+   - Option 1 — Jupyter Notebook  
+      Open `main.ipynb` and run all the cells  
+   - Option 2 — standalone Python script  
+       Run the script `main.py` from the terminal or Anaconda prompt:  
+       python main.py  
+4. The output catalogues will be saved automatically in `./earthquake_data/`
+
+
+### References
+GNS Science (2025). New Zealand Earthquake Catalogue. GNS Science, GeoNet. https://doi.org/10.21420/0S8P-TZ38
