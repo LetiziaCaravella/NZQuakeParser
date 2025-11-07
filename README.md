@@ -10,7 +10,7 @@ This script automates the download of **all magnitude data**
 from individual event web pages on 
 [GeoNet](https://www.geonet.org.nz/earthquake/technical/{eventID}).
 
-After reading the `.csv` files obtained from the GeoNet Quake Search site, 
+After reading the `.csv` file(s) obtained from the GeoNet Quake Search site, 
 it filters for earthquake data only,  
 lists the event IDs, fetches the technical pages asynchronously, extracts key information,  
 and saves the results in a catalogue `.csv` file.  
@@ -75,6 +75,6 @@ A copy of the GNU General Public License is listed along with this program.
        python main.py  
 4. The output catalogues will be saved automatically in `./earthquake_data/`
 
-
+-----
 ### References
 GNS Science (2025). New Zealand Earthquake Catalogue. GNS Science, GeoNet. https://doi.org/10.21420/0S8P-TZ38
