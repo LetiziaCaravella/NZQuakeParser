@@ -1,5 +1,6 @@
 # NZQuakeParser
 Project: GeoNet Earthquake Data Parser (NZQuakeParser)  
+DOI: 10.5281/zenodo.17552472  
 Author: L. Caravella, lcaravella@ogs.it  
 Year: 2025  
 ## Overview:  
@@ -74,7 +75,3 @@ A copy of the GNU General Public License is listed along with this program.
        Run the script `main.py` from the terminal or Anaconda prompt:  
        python main.py  
 4. The output catalogues will be saved automatically in `./earthquake_data/`
-
------
-### References
-GNS Science (2025). New Zealand Earthquake Catalogue. GNS Science, GeoNet. https://doi.org/10.21420/0S8P-TZ38
